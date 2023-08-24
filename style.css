@@ -1,0 +1,97 @@
+/* geral */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+body{
+    background-color: rgb(3, 3, 49);
+    height: 100vh;
+}
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+/* corpo */
+
+header{
+    text-align: center;
+    background-color: black;
+    }
+
+
+
+h1{
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: "Open Sans Condesed", sans-serif;
+ }
+h2{
+    text-align: center;
+    background-color: rgb(3, 3, 49);
+    color: white;
+    font-family: "Open Sans Condesed", sans-serif;
+}
+h3{
+    text-align: center;
+    background-color: rgb(3, 3, 49);
+    color: white;
+    font-family: "Open Sans Condesed", sans-serif;
+}
+.slider{
+    padding: 500px;
+    
+}
+.slides{
+    width: 400% ;
+    height: 400px;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+
+.manual-navigation{
+    position: absolute;
+    width: 1000px;
+    margin-top: 100px;
+    display: flex;
+    
+}
+
+.manual-btn{
+    border: 2px solid #FFF;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+.manual-btn:hover{
+    background-color: #FFF;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -17%;
+}
+#radio3:checked ~ .first{
+    margin-left: -42%;
+}
+#radio4:checked ~ .first{
+    margin-left: -62%;
+}
+#radio5:checked ~ .first{
+    margin-left: -80%;
+}
+#radio6:checked ~ .first{
+    margin-left: -100%;
+}
+#radio7:checked ~ .first{
+    margin-left: -123%;
+}
